@@ -1,0 +1,77 @@
+# File name: prognos.kv
+
+
+<PrognosRoot>:
+    canvas:
+        Color:
+            rgb: 1, 1, 1
+        Rectangle:
+            source: 'images/background.jpg'
+            size: self.size
+
+    location_label: _location_label
+    date_label: _date_label
+    min_temp_label: _min_temp_label
+    max_temp_label: _max_temp_label
+    weather_image: _weather_image
+    status_label: _status_label
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        ToolBar:
+            id: _tool_bar
+            size_hint: 1, None
+            height: 100
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 30
+
+                Label:
+                    id: _location_label
+                    text: u''
+                    font_size: 30
+                    color: 0, 1, 0, .5
+                    height:27
+                    italic: True
+
+                Label:
+                    id: _date_label
+                    text: u''
+                    font_size: 30
+                    text_size: 350, None
+                    color: 0, 1, 0, .5
+                    height:27
+                    italic: True
+
+            Label:
+                id: _status_label
+                text: u''
+                font_size: 30
+                size_hint_y: None
+                height: 100
+
+            Image:
+                id: _weather_image
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint_y: None
+                height: 70
+
+                Label:
+                    id: _min_temp_label
+                    text: u''
+                    font_size: 30
+                    color: 0, .6, 1, 1
+
+                Label:
+                    id: _max_temp_label
+                    text: u''
+                    font_size: 30
+                    color: 1, .2, 0, 1

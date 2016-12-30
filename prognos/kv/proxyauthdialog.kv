@@ -1,0 +1,52 @@
+# File name: proxyauthdialog.kv
+
+
+<ProxyAuthDialog>:
+    title: 'Autenticación de Proxy'
+    size_hint: None, None
+    size: 330, 200
+    auto_dismiss: False
+    user_text: _user_text
+    password_text: _password_text
+    ok_button: _ok_button
+    cancel_button: _cancel_button
+
+    GridLayout:
+        id: _layout
+        cols: 2
+        padding: 10
+        spacing: 10
+
+        Label:
+            text: 'Nombre de Usuario:'
+
+        TextInput:
+            id: _user_text
+            multiline: False
+            text: ''
+            write_tab: False
+
+        Label:
+            text: 'Contraseña:'
+
+        TextInput:
+            id: _password_text
+            multiline: False
+            text: ''
+            password: True
+            write_tab: False
+
+        Widget:
+
+        BoxLayout:
+            orientation: 'horizontal'
+
+            Button:
+                id: _cancel_button
+                text: 'Cancelar'
+                on_press: root.dismiss()
+
+            Button:
+                id: _ok_button
+                text: 'OK'
+                on_press: root.dismiss()

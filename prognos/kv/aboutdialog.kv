@@ -1,0 +1,40 @@
+# File name: aboutdialog.kv
+
+
+<AboutDialog>:
+    title: 'Acerca de...'
+    auto_dismiss: False
+    size_hint: None, None
+    height: 280
+    width: 500
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        FloatLayout:
+
+            Image:
+                source: 'images/prognos.png'
+                pos_hint: {'center_x': .2, 'center_y': .5}
+
+            Label:
+                text: 'Prognos'
+                font_size: 40
+                pos_hint: {'center_x': .5, 'center_y': .5}
+
+        Label:
+            text: 'Autores: Leodanis Pozo Ramos & Ozkar L. Garcell'
+
+        Label:
+            text: 'Aplicación simple para monitorear el estado del tiempo en CUBA.'
+            text_size: 450, None
+            line_height: 1
+            color: 0, .6, 1, 1
+
+        Button:
+            text: 'OK'
+            size_hint: None, None
+            height: 50
+            width: 100
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            on_release: root.dismiss()

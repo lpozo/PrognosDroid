@@ -1,0 +1,177 @@
+# File name: forecastdialog.kv
+
+
+<ExtendedForecastDialog>:
+    title: 'Pronóstico Extendido'
+    data_labels: [_day_label1, _location_label1, _t_max_label1, _t_min_label1, _forecast_label1, _weather_label1, _day_label2, _location_label2, _t_max_label2, _t_min_label2, _forecast_label2, _weather_label2, _day_label3, _location_label3, _t_max_label3, _t_min_label3, _forecast_label3, _weather_label3, _day_label4, _location_label4, _t_max_label4, _t_min_label4, _forecast_label4, _weather_label4, _day_label5, _location_label5, _t_max_label5, _t_min_label5, _forecast_label5, _weather_label5, _day_label6, _location_label6, _t_max_label6, _t_min_label6, _forecast_label6, _weather_label6, _day_label7, _location_label7, _t_max_label7, _t_min_label7, _forecast_label7, _weather_label7]
+
+    GridLayout:
+        cols: 6
+        id: _layout
+
+        Label:
+            text: 'Día'
+            color: 0, .6, 1, 1
+            bold: True
+        Label:
+            text: 'Ubicación'
+            color: 0, .6, 1, 1
+            bold: True
+        Label:
+            text: 'T. Máx.'
+            color: 0, .6, 1, 1
+            bold: True
+        Label:
+            text: 'T. Mín.'
+            color: 0, .6, 1, 1
+            bold: True
+        Label:
+            text: 'Pronóstico'
+            color: 0, .6, 1, 1
+            bold: True
+        Label:
+            text: ''
+            color: 0, .6, 1, 1
+            bold: True
+        # Raw 1
+        Label:
+            id: _day_label1
+            text: ''
+        Label:
+            id: _location_label1
+            text: ''
+        Label:
+            id: _t_max_label1
+            text: ''
+        Label:
+            id: _t_min_label1
+            text: ''
+        Label:
+            id: _forecast_label1
+            text: ''
+        Image:
+            id: _weather_label1
+            source: 'images/dialog-background.png'
+        # Raw 2
+        Label:
+            id: _day_label2
+            text: ''
+        Label:
+            id: _location_label2
+            text: ''
+        Label:
+            id: _t_max_label2
+            text: ''
+        Label:
+            id: _t_min_label2
+            text: ''
+        Label:
+            id: _forecast_label2
+            text: ''
+        Image:
+            id: _weather_label2
+            source: 'images/dialog-background.png'
+        # Raw 3
+        Label:
+            id: _day_label3
+            text: ''
+        Label:
+            id: _location_label3
+            text: ''
+        Label:
+            id: _t_max_label3
+            text: ''
+        Label:
+            id: _t_min_label3
+            text: ''
+        Label:
+            id: _forecast_label3
+            text: ''
+        Image:
+            id: _weather_label3
+            source: 'images/dialog-background.png'
+        # Raw 4
+        Label:
+            id: _day_label4
+            text: ''
+        Label:
+            id: _location_label4
+            text: ''
+        Label:
+            id: _t_max_label4
+            text: ''
+        Label:
+            id: _t_min_label4
+            text: ''
+        Label:
+            id: _forecast_label4
+            text: ''
+        Image:
+            id: _weather_label4
+            source: 'images/dialog-background.png'
+        # Raw 5
+        Label:
+            id: _day_label5
+            text: ''
+        Label:
+            id: _location_label5
+            text: ''
+        Label:
+            id: _t_max_label5
+            text: ''
+        Label:
+            id: _t_min_label5
+            text: ''
+        Label:
+            id: _forecast_label5
+            text: ''
+        Image:
+            id: _weather_label5
+            source: 'images/dialog-background.png'
+        # Raw 6
+        Label:
+            id: _day_label6
+            text: ''
+        Label:
+            id: _location_label6
+            text: ''
+        Label:
+            id: _t_max_label6
+            text: ''
+        Label:
+            id: _t_min_label6
+            text: ''
+        Label:
+            id: _forecast_label6
+            text: ''
+        Image:
+            id: _weather_label6
+            source: 'images/dialog-background.png'
+        # Raw 7
+        Label:
+            id: _day_label7
+            text: ''
+        Label:
+            id: _location_label7
+            text: ''
+        Label:
+            id: _t_max_label7
+            text: ''
+        Label:
+            id: _t_min_label7
+            text: ''
+        Label:
+            id: _forecast_label7
+            text: ''
+        Image:
+            id: _weather_label7
+            source: 'images/dialog-background.png'
+
+        Widget:
+        Widget:
+        Widget:
+        Widget:
+        Widget:
+        Button:
+            text: 'OK'
+            on_release: root.dismiss()

@@ -1,0 +1,43 @@
+# File name: daysdialog.kv
+
+
+<DaysDialog>:
+    title: 'Días en Pronóstico Extendido'
+    size_hint: None, None
+    height: 280
+    width: 700
+    auto_dismiss: False
+    days_spinner: _days_spinner
+    ok_button: _ok_button
+
+    GridLayout:
+        id: _layout
+        cols: 2
+        padding: 10
+        spacing: 10
+
+        Label:
+            text: 'Pronóstico para los próximos:'
+
+        Spinner:
+            id: _days_spinner
+            text: '3 Días'
+            values: '3 Días', '5 Días'
+
+        Image:
+            source: 'images/prognos.png'
+
+        Widget:
+        Widget:
+
+        BoxLayout:
+            orientation: 'horizontal'
+
+            Button:
+                id: _ok_button
+                text: 'OK'
+                on_press: root.dismiss()
+            Button:
+                id: _cancel_button
+                text: 'Cancelar'
+                on_release: root.dismiss()

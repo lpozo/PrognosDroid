@@ -1,0 +1,3 @@
+title=PrognosDroid
+author=lpozo
+orientation=landscape

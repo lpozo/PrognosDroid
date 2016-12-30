@@ -1,0 +1,40 @@
+# File name: toolbar.kv
+
+
+<ImageButton@Button>:
+    source: None
+    padding: 5, 5
+    text_size: self.size
+    halign: 'center'
+    valign: 'bottom'
+
+    Image:
+        source: root.source
+        pos: root.pos
+        size: root.size
+
+<ToolBar@BoxLayout>:
+    cols: 1
+    orientation: 'horizontal'
+    padding: 2
+
+    ImageButton:
+        on_release: root.parent.parent.update_weather_forecast()
+        source: 'images/applications-internet.png'
+
+    ImageButton:
+        on_release: root.parent.parent.extend_weather_forecast()
+        source: 'images/weather-clouds.png'
+
+    ImageButton:
+        on_release: root.parent.parent.open_options()
+        source: 'images/preferences-system.png'
+
+    ImageButton:
+        on_release: root.parent.parent.show_about_info()
+        source: 'images/system-help.png'
+
+    ImageButton:
+        on_press: root.parent.parent.prognos_app._on_close()
+        on_release: exit()
+        source: 'images/application-exit.png'

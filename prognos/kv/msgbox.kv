@@ -1,0 +1,32 @@
+# File name: msgbox.kv
+
+
+<MsgBox>:
+    title: 'Error'
+    size_hint: None, None
+    size: 450, 295
+    auto_dismiss: False
+    ok_button: _ok_button
+    msg_label: _msg_label
+
+    BoxLayout:
+        id: _layout
+        orientation: 'vertical'
+        padding: 10
+        spacing: 10
+
+        Label:
+            id: _msg_label
+            text_size: 400, None
+            line_height: 1.5
+            text: ''
+
+        Button:
+            id: _ok_button
+            text: 'OK'
+            size_hint: None, None
+            height: 50
+            width: 100
+            pos_hint: {'center_x': 0.5}
+            on_release: root.dismiss()
+
