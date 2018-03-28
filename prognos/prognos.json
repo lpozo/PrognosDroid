@@ -1,0 +1,48 @@
+[
+    {
+        "type": "title",
+        "title": "Configuración General"
+    },
+    {
+        "type": "options",
+        "title": "Ubicación",
+        "desc": "Defina el lugar o ubicación donde se encuentra",
+        "section": "general",
+        "key": "location_",
+        "options": ["Pinar del Río", "La Habana", "Varadero", "Cienfuegos",
+            "Cayo Coco", "Camagüey", "Holguín",  "Santiago de Cuba"]
+    },
+    {
+        "type": "options",
+        "title": "Temperatura",
+        "desc": "Unidad de temperatura a emplear",
+        "section": "general",
+        "key": "temp_unit_",
+        "options": ["Celsius ºC", "Fahrenheit ºF"]
+    },
+    {
+        "type": "title",
+        "title": "Configuración de Red"
+    },
+    {
+        "type": "bool",
+        "title": "Usar Proxy",
+        "desc": "Seleccione esta opción si debe usar proxy",
+        "section": "network",
+        "key": "use_proxy_"
+    },
+    {
+        "type": "string",
+        "title": "Proxy",
+        "desc": "Nombre del servidor proxy a emplear",
+        "section": "network",
+        "key": "host_"
+    },
+    {
+        "type": "string",
+        "title": "Puerto",
+        "desc": "Puerto para el servidor proxy",
+        "section": "network",
+        "key": "port_"
+    }
+]
